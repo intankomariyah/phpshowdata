@@ -1,0 +1,42 @@
+body{
+  position:relative;
+  font-family: sans-serif;
+}
+
+form{
+  position: absolute;
+  left: 0;
+  top: 150px;
+  width: 100%;
+}
+
+table{
+  border-collapse: collapse;
+  border-radius: 10px;
+  box-shadow: 2px 2px 10px grey;
+}
+
+td{
+  border-radius: 10px 10px 0px 0px;
+  padding: 10px;
+}
+
+input{
+  padding: 2px 5px;
+  border-radius: 5px;
+  border: 1px solid grey;
+}
+
+button{
+  background-color: #2196F3;
+  border: none;
+  border-radius: 5px;
+  height: 30px;
+  width: 100px;
+  color: #fff;
+  transition-duration: 0.3s;
+}
+
+button:hover{
+  box-shadow: 2px 1px 10px grey;
+}
