@@ -24,38 +24,37 @@ SET time_zone = "+00:00";
 
 -- --------------------------------------------------------
 
---
--- Table structure for table `siswa`
+--0
+-- Table structure for table `daftarsiswa`
 --
 
-CREATE TABLE `siswa` (
-  `id` int(3) NOT NULL,
-  `username` varchar(30) NOT NULL,
-  `password` varchar(30) NOT NULL,
-  `level` enum('admin','user','guest') NOT NULL,
-  `fullname` varchar(30) NOT NULL
+CREATE TABLE `daftarsiswa` (
+  `id` int(255) NULL,
+  `username` varchar(255) NOT NULL,
+  `password` varchar(255) NOT NULL,
+  `level` enum('admin','user',) NOT NULL,
+  `fullname` varchar(255) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
 --
--- Dumping data for table `siswa`
+-- Dumping data for table `daftarsiswa`
 --
 
-INSERT INTO `siswa` (`id`, `username`, `password`, `level`, `fullname`) VALUES
-(18, 'Lulu', 'lul', 'admin', 'Lulu Irman Permana'),
-(19, 'Dimas', 'dimas', 'user', 'M Dimas Nurwanda'),
-(20, 'Arul', 'arul', 'user', 'M Maulana Syahruliadi'),
-(21, 'Babah', 'babah', 'guest', 'M Bahtiar Anam'),
-(22, 'Hillman', 'hillman', 'guest', 'M Hilman'),
-(23, 'Aziz', 'aziz', 'user', 'M Abdul Aziz');
+INSERT INTO `daftarsiswa` (`id`, `username`, `password`, `level`, `fullname`) VALUES
+(16, 'intankomariyah', 'admin', 'intan', 'Intan Komariyah'),
+(17, 'joysemaydossiming', 'user', 'joyse', 'Joyse Maydossiming'),
+(18, 'luluirmanpermana', 'user', 'lulu', 'Lulu Irman Permana'),
+(19, 'mdimasnurwandaimawan', 'user', 'dimas', 'M Dimas Nurwanda Imawan'),
+(20, 'mmaulanasyahruliadi', 'user', 'M Maulana Syahruliadi');
 
 --
 -- Indexes for dumped tables
 --
 
 --
--- Indexes for table `siswa`
+-- Indexes for table `daftarsiswa`
 --
-ALTER TABLE `siswa`
+ALTER TABLE `daftarsiswa`
   ADD PRIMARY KEY (`id`);
 
 --
@@ -63,10 +62,10 @@ ALTER TABLE `siswa`
 --
 
 --
--- AUTO_INCREMENT for table `siswa`
+-- AUTO_INCREMENT for table `daftarsiswa`
 --
-ALTER TABLE `siswa`
-  MODIFY `id` int(3) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=26;
+ALTER TABLE `daftarsiswa`
+  MODIFY `id` int(255) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=26;
 COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;

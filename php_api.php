@@ -25,7 +25,7 @@
 			<th>Action</th>
 		</tr>
 		<?php
-			$qry = mysqli_query($koneksi,"SELECT * FROM siswa");
+			$qry = mysqli_query($koneksi,"SELECT * FROM daftarsiswa");
 			while($data = mysqli_fetch_array($qry)){
 		 ?>
 		<tr>
